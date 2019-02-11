@@ -15,7 +15,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import profile from "assets/img/profPic.jpg";
+import us from "assets/img/us.png";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
@@ -31,8 +31,8 @@ class ProfilePage extends React.Component {
     return (
       <div>
         <Header
-          color="transparent"
-          brand="Branden LaCour"
+          color="white"
+          brand="Arcodia"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -41,7 +41,7 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/chicago.jpg")} />
+        <Parallax small filter image={require("assets/img/dandelion.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
@@ -49,12 +49,11 @@ class ProfilePage extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
                     <div>
-                      <img src={profile} alt="..." className={imageClasses} />
+                      <img src={us} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Branden LaCour</h3>
-                      <h6>Front End Developer</h6>
-                      <h6>Chicago, IL</h6>
+                      <h3 className={classes.title}>About Us</h3>
+
                       {/* <Button justIcon link className={classes.margin5}>
                         <i className={"fab fa-twitter"} />
                       </Button>
@@ -70,13 +69,10 @@ class ProfilePage extends React.Component {
               </GridContainer>
               <div className={classes.description}>
                 <p style={{ paddingBottom: "40px" }}>
-                  I'm Branden, a Chicago native that loves all things tech. I
-                  switched from bar management to programming after a great talk
-                  with a friend in the business. When I start something, I
-                  finish it. The satisfaction of completing a project draws me
-                  to programming due to its problem solving nature. I am
-                  currently working as a contracted Web Developer in Chicago
-                  using React as my primary framework.{" "}
+                  Bacon ipsum dolor amet tenderloin ribeye pork capicola buffalo
+                  picanha. Rump turducken ham sausage. Alcatra tenderloin ham
+                  t-bone pork loin sirloin ribeye fatback. Spare ribs chicken
+                  short ribs tenderloin ground round burgdoggen doner.{" "}
                 </p>
               </div>
               {/* <GridContainer justify="center">

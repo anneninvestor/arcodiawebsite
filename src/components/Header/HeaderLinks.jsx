@@ -22,10 +22,11 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem} />
-      <Link className={classes.navLink} to="/">
-        About Us
-      </Link>
+      <ListItem className={classes.listItem}>
+        <Link className={classes.navLink} to="/aboutUs">
+          About Us
+        </Link>
+      </ListItem>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -34,25 +35,25 @@ function HeaderLinks({ ...props }) {
           buttonProps={{ className: classes.navLink, color: "transparent" }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/cloud" className={classes.dropdownLink}>
               Cloud
             </Link>,
             // <Link to="/blog" className={classes.dropdownLink}>
             //   Blog
             // </Link>,
-            <Link to="/projects" className={classes.dropdownLink}>
+            <Link to="/nodes" className={classes.dropdownLink}>
               Node
             </Link>,
-            <Link to="/about" className={classes.dropdownLink}>
+            <Link to="/dreams" className={classes.dropdownLink}>
               Dreams
             </Link>
           ]}
         />
       </ListItem>
-      <Link className={classes.navLink} to="/">
+      <Link className={classes.navLink} to="/ourJourney">
         Our Journey
       </Link>
-      <Link className={classes.navLink} to="/">
+      <Link className={classes.navLink} to="/contact">
         Contact
       </Link>
     </List>

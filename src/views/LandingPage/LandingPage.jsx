@@ -19,8 +19,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
-
+import ToolBoxSection from "./Sections/ToolBoxSection.jsx";
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
@@ -35,12 +34,12 @@ class LandingPage extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 200,
-            color: "black"
+            height: 400,
+            color: "white"
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/dandelion.jpg")}>
+        <Parallax image={require("assets/img/dandelion.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={8}>
@@ -68,7 +67,7 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            <WorkSection />
+            <ToolBoxSection />
           </div>
         </div>
         <Footer />

@@ -40,14 +40,15 @@ class LoginPage extends React.Component {
       700
     );
   }
+  // this page is currently an old login component
   render() {
     const { classes, ...rest } = this.props;
     return (
       <div>
         <Header
           absolute
-          color="transparent"
-          brand="Material Kit React"
+          color="white"
+          brand="Arcodia"
           rightLinks={<HeaderLinks />}
           {...rest}
         />

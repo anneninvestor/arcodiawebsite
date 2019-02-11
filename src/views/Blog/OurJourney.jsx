@@ -29,9 +29,9 @@ class LandingPage extends React.Component {
     return (
       <div>
         <Header
-          color="transparent"
+          color="white"
           routes={dashboardRoutes}
-          brand="Branden LaCour"
+          brand="Arcodia"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -40,12 +40,12 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/chicago.jpg")}>
+        <Parallax small filter image={require("assets/img/dandelion.jpg")}>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Be Unrealistic</h1>
-                <h4>Learning To Set Unrealistic Goals Might Help You</h4>
+                <h1 className={classes.title}>Blog</h1>
+                <h4>Blog Title</h4>
                 <br />
               </GridItem>
             </GridContainer>

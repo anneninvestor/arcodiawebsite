@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo.png";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
@@ -28,12 +29,8 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.linkedin.com/in/branden-lacour-95b702a6/"
-                className={classes.block}
-                target="_blank"
-              >
-                Branden LaCour
+              <a href="" className={classes.block} target="_blank">
+                <img src={logo} alt="logo" style={{ height: "30px" }} />
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -42,23 +39,36 @@ function Footer({ ...props }) {
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              {/* <Link to="/blog" className={classes.block} target="_blank">
-                Blog
-              </Link> */}
+              <Link to="/contact" className={classes.block} target="_blank">
+                Contact
+              </Link>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.linkedin.com/in/branden-lacour-95b702a6/"
-            className={aClasses}
-            target="_blank"
-          >
-            Branden LaCour
-          </a>{" "}
-          for a better web.
+          <ListItem className={classes.inlineBlock} style={{ padding: "10px" }}>
+            <Link to="/contact">Start A Project</Link>
+            <br />
+            <h8>We are ready for the challange</h8>
+          </ListItem>
+          <ListItem className={classes.inlineBlock} style={{ padding: "10px" }}>
+            <Link to="/jobs">Jobs</Link>
+            <br />
+            <h8>We are always looking for talent </h8>
+          </ListItem>
+          <ListItem style={{ padding: "10px" }} className={classes.inlineBlock}>
+            <h8>
+              Say Hello! <br />
+              2393 w adams St. Chicago
+              <br />
+            </h8>
+          </ListItem>
+
+          <ListItem className={classes.inlineBlock}>
+            {/* <Link to="/blog" className={classes.block} target="_blank">
+                Blog
+              </Link> */}
+          </ListItem>
         </div>
       </div>
     </footer>

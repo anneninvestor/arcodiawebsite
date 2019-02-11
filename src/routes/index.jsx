@@ -1,12 +1,18 @@
 import LandingPage from "views/LandingPage/LandingPage.jsx";
-import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
-import ProjectsPage from "views/ProjectsPage/ProjectsPage.jsx";
-import BlogPage from "views/Blog/BlogPage.jsx";
+import AboutUs from "views/AboutUs/AboutUs.jsx";
+import Nodes from "views/Services/Nodes.jsx";
+import Dreams from "views/Services/Dreams.jsx";
+import Cloud from "views/Services/Cloud.jsx";
+import OurJourney from "views/Blog/OurJourney.jsx";
+import Contact from "views/Contact/Contact.jsx";
 
 var indexRoutes = [
-  { path: "/about", name: "About", component: ProfilePage },
-  { path: "/blog", name: "Blog", component: BlogPage },
-  { path: "/projects", name: "Projects", component: ProjectsPage },
+  { path: "/aboutUs", name: "AboutUs", component: AboutUs },
+  { path: "/ourJourney", name: "Blog", component: OurJourney },
+  { path: "/nodes", name: "Node", component: Nodes },
+  { path: "/dreams", name: "Dreams", component: Dreams },
+  { path: "/cloud", name: "Cloud", component: Cloud },
+  { path: "/contact", name: "Contact", component: Contact },
   { path: "/", name: "Home", component: LandingPage }
 ];
 
